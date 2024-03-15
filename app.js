@@ -13,7 +13,7 @@ app.use(express.json());        // A body Parser Required to post a data
 app.use('/', route);
 
 // DB
-const MongoAtlas = "mongodb+srv://jyotimane2705:08pYzmcHfYNBWF1U@nodeass.uicntdi.mongodb.net/NodeDB?retryWrites=true&w=majority&appName=NodeASS"
+const MongoAtlas = "mongodb+srv://<UserName>:<Password>@nodeass.uicntdi.mongodb.net/<DatabaseName>?retryWrites=true&w=majority&appName=NodeASS"
 
 mongoose.connect(MongoAtlas, {
     useNewUrlParser: true,
